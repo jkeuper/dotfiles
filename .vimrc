@@ -152,7 +152,7 @@ call plug#end()
 
 " GENERAL {{{
 syntax enable                          " Enable syntax highlighting
-colorscheme tender
+"colorscheme tender
 let mapleader = "\<Space>"             " Setup leader key
 let macvim_skip_colorscheme=1
 " }}}

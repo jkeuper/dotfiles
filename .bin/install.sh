@@ -6,8 +6,6 @@ function cfgit {
  /usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME $@
 }
 
-echo "alias cfgit='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'" >> $HOME/.bash_aliases
-
 cfgit config --local status.showUntrackedFiles no
 cfgit push --set-upstream origin master
 
@@ -20,3 +18,4 @@ if ! [ $? = 0 ]; then
   # the .bash_aliases is overwritten here with the cfgit alias already present
 fi;
 
+echo "alias cfgit='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'" >> $HOME/.bash_aliases
