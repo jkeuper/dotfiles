@@ -16,6 +16,7 @@ if ! [ $? = 0 ]; then
   echo "Backing up pre-existing dot files to ~/.cfg-backup/";
   cfgit checkout
   # the .bash_aliases is overwritten here with the cfgit alias already present
+else
+  echo "alias cfgit='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'" >> $HOME/.bash_aliases
 fi;
 
-echo "alias cfgit='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'" >> $HOME/.bash_aliases
