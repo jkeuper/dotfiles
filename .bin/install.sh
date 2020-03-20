@@ -1,6 +1,7 @@
 #/bin/sh
 
-git clone --bare git@github.com:jkeuper/dotfiles.git $HOME/.cfg
+#git clone --bare git@github.com:jkeuper/dotfiles.git $HOME/.cfg
+git clone --bare https://github.com/jkeuper/dotfiles.git $HOME/.cfg
 
 function cfgit {
  /usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME $@
