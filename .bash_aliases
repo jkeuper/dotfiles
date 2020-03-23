@@ -27,7 +27,12 @@ extract() {
 
 # create directory and navigate to it
 mk() {
-  mkdir "$1" && cd "$1"
+  mkdir -p -- "$1" && cd -P -- "$1"
+}
+
+# ls alias
+ll() {
+  ls -alFh $@
 }
 
 alias cfgit='/usr/bin/git --git-dir=/root/.cfg/ --work-tree=/root'

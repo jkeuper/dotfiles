@@ -11,6 +11,7 @@ call plug#begin('~/.vim/plugged')
   " Provides insert mode auto-completion for quotes, parens, brackets, etc
   Plug 'Raimondi/delimitMate'
   let delimitMate_expand_cr = 1
+  let delimitMate_quotes = "\" ' *"
 
   " Always highlights the enclosing html/xml tags
 "  Plug 'Valloric/MatchTagAlways'
@@ -29,7 +30,7 @@ call plug#begin('~/.vim/plugged')
   " let g:ycm_autoclose_preview_window_after_insertion = 1
 
   " Shows a git diff in the gutter (sign column) and stages/undoes hunks
-  Plug 'airblade/vim-gitgutter'
+  " Plug 'airblade/vim-gitgutter'
 
   " Auto close (X)HTML tags
   Plug 'alvan/vim-closetag'
