@@ -35,4 +35,4 @@ ll() {
   ls -alFh $@
 }
 
-alias cfgit='/usr/bin/git --git-dir=/root/.cfg/ --work-tree=/root'
+alias cfgit='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
