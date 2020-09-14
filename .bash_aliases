@@ -2,6 +2,12 @@ alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
+alias toupper="tr [a-z] [A-Z]"
+alias tolower="tr [A-Z] [a-z]"
+
+goto() {
+  cd `readlink -f $1`
+}
 
 ## Extract file, example. "ex package.tar.bz2"
 extract() {
@@ -36,3 +42,7 @@ ll() {
 }
 
 alias cfgit='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias cfgit='/usr/bin/git --git-dir=/home/kali/.cfg/ --work-tree=/home/kali'
+
+alias hexencode='xxd -p'
+alias hexdecode='xxd -p -r'
