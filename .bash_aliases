@@ -37,12 +37,13 @@ mk() {
 }
 
 # ls alias
-ll() {
-  ls -alFh $@
-}
+#ll() {
+#  ls -alFh $@
+#}
 
 alias cfgit='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
-alias cfgit='/usr/bin/git --git-dir=/home/kali/.cfg/ --work-tree=/home/kali'
 
 alias hexencode='xxd -p'
 alias hexdecode='xxd -p -r'
+alias ctrlc='xclip -selection c'
+alias ctrlv='xclip -selection c -o'
